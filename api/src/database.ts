@@ -16,5 +16,5 @@ genre(sequelize);
 game(sequelize);
 
 export const { Genre, Game } = sequelize.models;
-Game.belongsToMany(Genre, { through: "Game_Genre" });
-Genre.belongsToMany(Game, { through: "Game_Genre" });
+Game.belongsToMany(Genre, { through: "game_genre", timestamps: false });
+Genre.belongsToMany(Game, { through: "game_genre", timestamps: false });
