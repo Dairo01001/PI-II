@@ -1,6 +1,6 @@
 import { DataTypes, Sequelize } from "sequelize";
 
-export interface GameAttributes {
+export interface IGame {
   id: string;
   name: string;
   description: string;
