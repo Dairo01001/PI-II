@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 export default {
   DB: {
     USER: process.env.DB_USER || "postgres",
@@ -7,6 +9,6 @@ export default {
   ACCESS: process.env.ACCESS || "http://localhost:3000",
   PORT: process.env.PORT || 3001,
   API: {
-    KEY: process.env.API_KEY || "56527682ac6b4f5f8b62b239475a255f",
+    KEY: process.env.API_KEY,
   },
 };
